@@ -1,0 +1,10 @@
+/*
+ * Holberton proyect 0x00 6.
+ */
+
+#include <stdio.h>
+int main()
+{
+    printf("Size of char : " sizeof(char) "byte(s)\n");
+    return 0;
+}
