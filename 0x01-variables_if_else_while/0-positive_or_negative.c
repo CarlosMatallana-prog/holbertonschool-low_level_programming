@@ -2,11 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
-
+/* Function to check if a ramdom number is positive, negative, or zero */
 /**
- * Function to check if a ramdom number is positive, negative, or zero
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int n;
