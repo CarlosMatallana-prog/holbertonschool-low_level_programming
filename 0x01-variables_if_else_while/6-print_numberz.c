@@ -3,20 +3,17 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int
 main(void)
 {
 	int c;
 
-	c = 0;
-	while  (c < 10)
+	for (c = 48; c < 58; c++)
 	{
 		putchar(c);
-		c++;
 	}
 	putchar('\n');
-
 	return (0);
 }
