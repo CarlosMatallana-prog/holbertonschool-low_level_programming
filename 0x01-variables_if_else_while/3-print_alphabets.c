@@ -10,6 +10,7 @@ main(void)
 {
 	char ch;
 	char ci;
+
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
