@@ -1,9 +1,13 @@
 #include "holberton.h"
 
-/* Prints the alphabet */
 /**
+ * print_alphabet - entry point
+ *
+ * Description: Prints the alphabet
+ *
  * Return: void
  */
+
 void print_alphabet(void)
 {
 	char i;
