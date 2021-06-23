@@ -19,7 +19,8 @@ void times_table(void)
 		{
 			d = ((j * i) / 10) + 48;
 			u = ((j * i) % 10) + 48;
-			if (i == 0) {
+			if (i == 0)
+			{
 				_putchar(48);
 				_putchar(44);
 				_putchar(32);
