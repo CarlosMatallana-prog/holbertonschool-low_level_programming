@@ -6,20 +6,21 @@
 *
 * Description: Print the last digit of a number
 *
-* Return: p
+* Return: m
 */
 
 int print_last_digit(int n)
 {
 
-	int p;
+	int m, p;
 
-	if (n < 0)
+	m = n % 10;
+	if (m <  0)
 	{
-		n = -n;
+		m = -m;
 	}
-	p = n % 10;
-	_putchar('0' + p);
-	return (p);
+	p = '0' + m;
+	_putchar(p);
+	return (m);
 
 }
