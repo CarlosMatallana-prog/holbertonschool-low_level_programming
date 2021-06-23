@@ -11,11 +11,7 @@
 void times_table(void)
 {
 
-	int i, j, d, u, space, coma;
-
-	j = 0;	
-	space = 32;
-	coma = 44;
+	int i, j = 0, d, u;
 
 	while (j <= 9)
 	{
@@ -23,16 +19,22 @@ void times_table(void)
 		{
 			d = ((j * i) / 10) + 48;
 			u = ((j * i) % 10) + 48;
-			(j * i > 9) ? _putchar(d) : _putchar(space);
-			_putchar(u);
-			if (i < 9)
+			if (i == 0) {
+				_putchar(48);
+				_putchar(44);
+			}
+			else
 			{
-				_putchar(coma);		       
-				_putchar(space);
+				(j * i > 9) ? _putchar(d) : _putchar(32);
+				_putchar(u);
+				if (i < 9)
+				{
+					_putchar(44);
+					_putchar(32);
+				}
 			}
 		}
 		_putchar('\n');
 		j++;
 	}
-
 }
