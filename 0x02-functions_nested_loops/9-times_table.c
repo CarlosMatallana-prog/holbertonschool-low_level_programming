@@ -22,6 +22,7 @@ void times_table(void)
 			if (i == 0) {
 				_putchar(48);
 				_putchar(44);
+				_putchar(32);
 			}
 			else
 			{
