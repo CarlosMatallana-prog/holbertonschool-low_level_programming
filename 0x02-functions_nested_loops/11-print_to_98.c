@@ -22,7 +22,7 @@ void print_to_98(int n)
 		else
 		{
 			n++;
-		}	 
+		}
 	}
 	printf("98\n");
 }
