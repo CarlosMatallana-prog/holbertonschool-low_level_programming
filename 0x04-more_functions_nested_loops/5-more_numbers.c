@@ -11,7 +11,7 @@ void more_numbers(void)
 
 	while (times < 10)
 	{
-		for (number = 0; number <= 14; ++number)
+		for (number = 0; number <= 14; number++)
 		{
 			units = number % 10;
 			if (number > 9)
