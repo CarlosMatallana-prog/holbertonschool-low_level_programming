@@ -4,30 +4,29 @@
  * print_triangle - prints a triangle
  * @size: Size of the triagle base
  *
- * Return: void
  */
-void print_triagle(int size)
+void print_triangle(int size)
 {
-	int rows = 1, numeral, spaces;
+	int rows = 1, spaces, keys;
 
 	if (size > 0)
 	{
-		numeral = 0;
-
 		while (rows <= size)
 		{
-		spaces = size;
-			while (numeral <= spaces)
+			spaces = size - rows;
+			keys = size - spaces;
+			while (spaces > 0)
 			{
-				if (spaces > numeral)
-					_putchar(32);
-				if(numeral <= size)
-					_putchar(35);
-				numeral++;
+				_putchar(32);
 				spaces--;
 			}
+			while (keys > 0)
+			{
+				_putchar(35);
+				keys--;
+			}
+			rows++;
 			_putchar('\n');
-			rows--;
 		}
 	}
 	else
