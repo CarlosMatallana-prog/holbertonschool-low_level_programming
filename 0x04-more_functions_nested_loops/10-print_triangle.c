@@ -2,26 +2,32 @@
 
 /**
  * print_triangle - prints a triangle
- * @size: Size of the square
+ * @size: Size of the triagle base
  *
  * Return: void
  */
-void print_square(int size)
+void print_triagle(int size)
 {
-	int rows = 1, columns;
+	int rows = 1, numeral, spaces;
 
 	if (size > 0)
 	{
+		numeral = 0;
+
 		while (rows <= size)
 		{
-			columns = 1;
-			while (columns <= size)
+		spaces = size;
+			while (numeral <= spaces)
 			{
-				_putchar(35);
-				columns++;
+				if (spaces > numeral)
+					_putchar(32);
+				if(numeral <= size)
+					_putchar(35);
+				numeral++;
+				spaces--;
 			}
 			_putchar('\n');
-			rows++;
+			rows--;
 		}
 	}
 	else
