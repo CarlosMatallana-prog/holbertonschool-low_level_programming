@@ -10,18 +10,13 @@
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int iterator;
+	int iterator = 0;
 
 	if (argc > 1)
 	{
-		for (iterator = 0; iterator < argc - 1; iterator++)
-			continue;
+		while(iterator < argc - 1)
+			iterator++;
 	}
-	else
-	{
-		iterator = 0;
-	}
-
 
 	printf("%d\n", iterator);
 
