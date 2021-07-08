@@ -12,11 +12,8 @@ int main(int argc, char *argv[] __attribute__((unused)))
 {
 	int iterator = 0;
 
-	if (argc > 1)
-	{
-		while(iterator < argc - 1)
-			iterator++;
-	}
+	while(iterator < argc - 1 && argc > 1)
+		iterator++;
 
 	printf("%d\n", iterator);
 
