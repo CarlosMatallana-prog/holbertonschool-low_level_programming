@@ -10,12 +10,7 @@
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int iterator = 0;
-
-	while(iterator < argc - 1 && argc > 1)
-		iterator++;
-
-	printf("%d\n", iterator);
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
