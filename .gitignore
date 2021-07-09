@@ -15,3 +15,6 @@
 
 #ignore backup files
 *.*~
+
+#ignore _putchar
+_putchar.c
