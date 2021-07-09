@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (numbers == 2)
 	{
-		printf("%d\n", ((atoi(argv[2]))) * ((atoi(argv[3]))));
+		printf("%d\n", ((atoi(argv[2])) * (atoi(argv[3]))));
 
 		return (0);
 	}
