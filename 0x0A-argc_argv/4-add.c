@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		for (iterator = 1; iterator <= numbers; iterator++)
 		{
 			digit = (atoi(argv[iterator]));
-			is_digit = digit > 0 ? 1 : 0;
+			is_digit = digit == 0 ? 0 : 1;
 			if (is_digit == 1)
 			{
 				result += digit;
