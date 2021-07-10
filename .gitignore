@@ -7,6 +7,9 @@
 #unignore .h header files in each directory
 !*/*.h
 
+#unignore .o files in each directory
+!*/*.o
+
 #unignore .gitignore
 !.gitignore
 
