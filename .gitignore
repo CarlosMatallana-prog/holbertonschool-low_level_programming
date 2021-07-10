@@ -10,6 +10,9 @@
 #unignore .o files in each directory
 !*/*.o
 
+#unignore .md files in each directory
+!*/*.md
+
 #unignore .gitignore
 !.gitignore
 
