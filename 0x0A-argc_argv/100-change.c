@@ -8,6 +8,7 @@
  *
  * Return: 0 Success status or 1 Fail status
  */
+int main(int argc, char *argv[])
 {
 	int value, cont = 0, modulo;
 	(void)argv;
