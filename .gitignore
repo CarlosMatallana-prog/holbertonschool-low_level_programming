@@ -16,6 +16,10 @@
 #unignore .md files in each directory
 !*/*.md
 
+#unignore .sh files in each directory
+!*/*.sh
+
+
 #unignore .gitignore
 !.gitignore
 
