@@ -10,6 +10,9 @@
 #unignore .o files in each directory
 !*/*.o
 
+#unignore .a files in each directory
+!*/*.a
+
 #unignore .md files in each directory
 !*/*.md
 
@@ -21,6 +24,3 @@
 
 #ignore backup files
 *.*~
-
-#ignore _putchar
-_putchar.c
