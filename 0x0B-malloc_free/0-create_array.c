@@ -17,20 +17,16 @@ char *create_array(unsigned int size, char c)
 
 	str = malloc(sizeof(char) * c);
 
-	if (size == 0 || size == '\0')
-		return ('\0');
-
-
-	while (i < size)
+	if (size != 0 || size != '\0')
 	{
-		if (str[i] == '\0')
+		for (i = 0; i < size; i++)
 		{
-			return ('\0');
+			str[i] = c;
 		}
-		str[i] = c;
-		i++;
+
+		return (str);
 	}
 
-	return (str);
+	return ('\0');
 
 }
