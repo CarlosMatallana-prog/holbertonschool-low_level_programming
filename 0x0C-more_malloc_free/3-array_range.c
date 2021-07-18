@@ -10,7 +10,7 @@
  */
 int *array_range(int min, int max)
 {
-	int *chain, i, j;
+	int *chain = NULL, i, j;
 
 	if (min > max)
 		return (NULL);
@@ -26,6 +26,6 @@ int *array_range(int min, int max)
 		}
 		return (chain);
 	}
-	return (NULL);
 
+	return (chain);
 }
