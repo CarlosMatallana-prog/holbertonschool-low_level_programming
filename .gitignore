@@ -29,5 +29,6 @@
 #ignore backup files
 *.*~
 
-#ignore .idea
+#ignore clion files
 .idea
+CMakeLists.txt
