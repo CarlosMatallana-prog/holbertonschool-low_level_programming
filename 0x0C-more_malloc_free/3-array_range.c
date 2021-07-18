@@ -27,6 +27,6 @@ int *array_range(int min, int max)
 		return (chain);
 	}
 
-	return NULL;
+	return (NULL);
 
 }
