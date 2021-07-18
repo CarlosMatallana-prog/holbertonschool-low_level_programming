@@ -28,3 +28,6 @@
 
 #ignore backup files
 *.*~
+
+#ignore .idea
+.idea
