@@ -10,19 +10,19 @@
  */
 int *array_range(int min, int max)
 {
-	int *chain = NULL, i, j;
+	int *chain = NULL, i, size;
 
 	if (min > max)
 		return (NULL);
 
-	chain = malloc(sizeof(int) * (max - min) + 1);
+	size = max - min + 1
+	chain = malloc(sizeof(int) * size);
 	if (chain != NULL)
 	{
-		j = min;
-		for (i = 0; i < (max - min) + 1; i++)
+		for (i = 0; i < size; i++)
 		{
-			chain[i] = j;
-			j++;
+			chain[i] = min;
+			min++;
 		}
 	}
 
