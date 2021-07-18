@@ -24,7 +24,6 @@ int *array_range(int min, int max)
 			chain[i] = j;
 			j++;
 		}
-		return (chain);
 	}
 
 	return (chain);
