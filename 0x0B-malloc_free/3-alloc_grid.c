@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 	if (grid == NULL)
 		return (NULL);
 
-	for (i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
 		grid[i] = malloc(sizeof(int) * width);
 		/* Check the allocated memory for width */
@@ -35,7 +35,7 @@ int **alloc_grid(int width, int height)
 		}
 
 		/* Fill the array */
-		for (j = 0; j < height; j++)
+		for (j = 0; j < width; j++)
 			grid[i][j] = 0;
 	}
 
