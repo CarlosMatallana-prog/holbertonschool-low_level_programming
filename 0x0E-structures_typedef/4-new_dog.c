@@ -14,12 +14,15 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *store_name = name, *copy_owner = owner;
-	unsigned int name_size = 0, owner_size = 0, k, l;
-	dog_t *my_dog;
+	char *store_name, *store_owner;
+	int name_size = 0, owner_size = 0, k, l;
+	dog_t *new_puppy;
 
-	my_dog = malloc(sizeof(dog_t));
-	if (my_dog == NULL)
+	if (name == 0 || owner == 0)
+		return (NULL);
+
+	new_puppy = malloc(sizeof(dog_t));
+	if (new_puppy == NULL)
 		return (NULL);
 
 	/* store the dog name */
@@ -28,30 +31,30 @@ dog_t *new_dog(char *name, float age, char *owner)
 	store_name = malloc((name_size * sizeof(char)) + 1);
 	if (store_name == NULL)
 	{
-		free(my_dog);
+		free(new_puppy);
 		return (NULL);
 	}
-	for (k = 0; k < name_size; ++k)
+	for (k = 0; k < name_size + 1; ++k)
 		store_name[k] = name[k];
 
 	/* store the dog owner */
 	while (owner[owner_size] != '\0')
 		owner_size++;
-	copy_owner = malloc((owner_size * sizeof(char)) + 1);
-	if (copy_owner == NULL)
+	store_owner = malloc((owner_size * sizeof(char)) + 1);
+	if (store_owner == NULL)
 	{
 		free(store_name);
-		free(my_dog);
+		free(new_puppy);
 		return (NULL);
 	}
-	for (l = 0; l < owner_size; ++l)
-		copy_owner[l] = owner[l];
+	for (l = 0; l < owner_size + 1; ++l)
+		store_owner[l] = owner[l];
 
-	(*my_dog).name = store_name;
-	(*my_dog).age = age;
-	(*my_dog).owner = copy_owner;
+	new_puppy->name = store_name;
+	new_puppy->age = age;
+	new_puppy->owner = store_owner;
 
-	return (my_dog);
+	return (new_puppy);
 
 }
 
