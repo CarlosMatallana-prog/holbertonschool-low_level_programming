@@ -1,11 +1,10 @@
 #include "dog.h"
-#include <stdlib.h>
 #include <stdio.h>
 
-
 /**
- * d - the dog variable
- * d - the dog variable
+ * init_dog - the dog structure.
+ *
+ * @d: the dog structure
  * @name: the name of the dog
  * @age: the age of the dog
  * @owner: the owner of the dog
