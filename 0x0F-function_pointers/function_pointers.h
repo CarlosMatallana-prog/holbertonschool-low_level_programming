@@ -10,6 +10,7 @@
  *
  * Description: Structure for storing the params of the dog.
  */
+int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
 
 #endif /* DOG */
