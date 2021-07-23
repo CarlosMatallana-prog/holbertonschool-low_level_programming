@@ -14,14 +14,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list struc;
 	unsigned int i;
-	char *new_separator;
-
-	if (separator == NULL)
-		new_separator = "";
-	else
-		new_separator = separator;
 
 	va_start(struc, n);
+
 	if (n > 0)
 	{
 		for (i = 0; i < n; i++)
@@ -29,7 +24,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d", va_arg(struc, int));
 			if (i < (n - 1))
 			{
-				printf("%s", new_separator);
+				if (separator == NULL)
+					printf("%s", "");
+
+				else
+					printf("%s", separator);
+
 			}
 		}
 		printf("\n");
