@@ -9,7 +9,7 @@
 size_t print_list(const list_t *h)
 {
 	list_t *temporary = (list_t *)h;
-	unsigned int nodes = 0;
+	size_t nodes = 0;
 
 	while (temporary != NULL)
 	{
