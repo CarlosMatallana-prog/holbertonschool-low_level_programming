@@ -16,7 +16,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *temporary = head;
 	size_t nodes = 0;
 
-	if (head != NULL)
+	if (head == NULL)
 		return (NULL);
 
 	while (temporary != NULL)
