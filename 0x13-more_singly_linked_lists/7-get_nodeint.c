@@ -14,18 +14,17 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 
 	listint_t *temporary = head;
-	size_t nodes = 0;
+	unsigned int i;
 
 	if (head == NULL)
 		return (NULL);
 
-	while (temporary != NULL)
+	for (i = 0; i < index; ++i)
 	{
 		temporary = temporary->next;
-		nodes++;
-		if (nodes == index)
-			return (temporary);
+		if (temporary == NULL)
+			return (NULL);
 	}
-	return (NULL);
+	return (temporary);
 
 }
