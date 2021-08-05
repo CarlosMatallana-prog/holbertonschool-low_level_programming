@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0;
 	int len;
-	unsigned int base = 1;
+	unsigned int position = 1;
 
 	if (b)
 	{
@@ -25,8 +25,8 @@ unsigned int binary_to_uint(const char *b)
 		len--;
 		for (; len >= 0; len--)
 		{
-			num += (b[len] - '0') * base;
-			base = base * 2;
+			num += (b[len] + '0') * position;
+			position = position * 2;
 		}
 	}
 	return (num);
