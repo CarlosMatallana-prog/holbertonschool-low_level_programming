@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * main - a function that prints the binary representation of a number
+ * print_binary - a function that prints the binary representation of a number
+ * @n: the number to represent.
  *
  * Return: Always 0.
  */
