@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b)
 	int len;
 	unsigned int base = 1;
 
-	if (b && b[len])
+	if (b)
 	{
 		for (len = 0; b[len] != '\0'; len++)
 		{
@@ -26,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 		for (; len >= 0; len--)
 		{
 			num += (b[len] - '0') * base;
-			bDigit = bDigit * 2;
+			base = base * 2;
 		}
 	}
 	return (num);
