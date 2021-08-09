@@ -1,8 +1,13 @@
 #ifndef FILE_I_O
 #define FILE_I_O
 
-#include <stdlib.h>
+
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 int _putchar(char c);
 
