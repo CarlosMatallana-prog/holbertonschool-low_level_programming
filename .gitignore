@@ -19,6 +19,8 @@
 #unignore .sh files in each directory
 !*/*.sh
 
+#unignore .so files in each directory
+!*/*.so
 
 #unignore .gitignore
 !.gitignore
