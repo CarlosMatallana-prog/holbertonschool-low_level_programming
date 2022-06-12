@@ -21,6 +21,7 @@
 
 #unignore .sh files in each directory
 !*/*.sh
+!*-O
 
 #unignore .so files in each directory
 !*/*.so
